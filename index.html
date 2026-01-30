@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saasta - Compare Real-Time Prices from Amazon & Flipkart</title>
-    <meta name="description" content="Save big with Saasta. Search and compare product prices from India's top retailers in one place.">
+    <meta name="description"
+        content="Save big with Saasta. Search and compare product prices from India's top retailers in one place.">
     <link rel="icon" href="/Saasta.svg">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -34,6 +37,7 @@
                 <!-- Right Section -->
                 <div class="right-section">
                     <div class="nav-links-main">
+                        <a href="#products" class="nav-text-link">Deals</a>
                         <a href="#faq" class="nav-text-link">FAQ</a>
                         <a href="#" class="nav-text-link">Blogs</a>
                         <a href="#brands" class="nav-text-link">Brands</a>
@@ -67,6 +71,7 @@
 
             <div class="mobile-nav-links">
                 <a href="#" class="mobile-nav-link">Home</a>
+                <a href="#products" class="mobile-nav-link">Hot Deals</a>
                 <a href="#faq" class="mobile-nav-link">FAQ</a>
                 <a href="#" class="mobile-nav-link">Blogs</a>
                 <a href="#brands" class="mobile-nav-link">Brands</a>
@@ -96,7 +101,8 @@
 
                 <div class="hero-search-container">
                     <form class="hero-search-form">
-                        <input type="text" placeholder="Search for mobiles, laptops, electronics..." class="hero-search-input">
+                        <input type="text" placeholder="Search for mobiles, laptops, electronics..."
+                            class="hero-search-input">
                         <button type="submit" class="hero-search-btn">Search</button>
                     </form>
                 </div>
@@ -122,24 +128,54 @@
                     <!-- Sellers duplicated for infinite scroll -->
                     <!-- Original array x2 -->
                     <!-- Amazon -->
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/flipkart/flipkart-ar21.svg" alt="Flipkart" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/myntra/myntra-ar21.svg" alt="Myntra" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Reliance_Digital_Logo.svg" alt="Reliance Digital" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Croma_Logo.svg" alt="Croma" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Tata_Cliq_Logo.svg" alt="Tata CLiQ" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Logo_of_Ajio.png" alt="Ajio" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/JioMart_logo.svg" alt="Jiomart" class="seller-ticker-img"></div>
-                    
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://www.vectorlogo.zone/logos/flipkart/flipkart-ar21.svg" alt="Flipkart"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/myntra/myntra-ar21.svg"
+                            alt="Myntra" class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/13/Reliance_Digital_Logo.svg"
+                            alt="Reliance Digital" class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Croma_Logo.svg" alt="Croma"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Tata_Cliq_Logo.svg" alt="Tata CLiQ"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Logo_of_Ajio.png" alt="Ajio"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/JioMart_logo.svg" alt="Jiomart"
+                            class="seller-ticker-img"></div>
+
                     <!-- Duplicate -->
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/flipkart/flipkart-ar21.svg" alt="Flipkart" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/myntra/myntra-ar21.svg" alt="Myntra" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Reliance_Digital_Logo.svg" alt="Reliance Digital" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Croma_Logo.svg" alt="Croma" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Tata_Cliq_Logo.svg" alt="Tata CLiQ" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Logo_of_Ajio.png" alt="Ajio" class="seller-ticker-img"></div>
-                    <div class="seller-logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/JioMart_logo.svg" alt="Jiomart" class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://www.vectorlogo.zone/logos/flipkart/flipkart-ar21.svg" alt="Flipkart"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img src="https://www.vectorlogo.zone/logos/myntra/myntra-ar21.svg"
+                            alt="Myntra" class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/13/Reliance_Digital_Logo.svg"
+                            alt="Reliance Digital" class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Croma_Logo.svg" alt="Croma"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Tata_Cliq_Logo.svg" alt="Tata CLiQ"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Logo_of_Ajio.png" alt="Ajio"
+                            class="seller-ticker-img"></div>
+                    <div class="seller-logo-item"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/JioMart_logo.svg" alt="Jiomart"
+                            class="seller-ticker-img"></div>
                 </div>
             </div>
         </section>
@@ -147,17 +183,20 @@
         <!-- Testimonials -->
         <section class="testimonial-section">
             <div class="container">
-                <h2 class="section-title" style="color: white; margin-bottom: 1rem;">User <span class="gradient-text">Feedback</span></h2>
-                <p style="text-align: center; color: #94a3b8; margin-bottom: 3rem; font-size: 1.2rem;">Trusted by millions of shoppers across India</p>
+                <h2 class="section-title" style="color: white; margin-bottom: 1rem;">User <span
+                        class="gradient-text">Feedback</span></h2>
+                <p style="text-align: center; color: #94a3b8; margin-bottom: 3rem; font-size: 1.2rem;">Trusted by
+                    millions of shoppers across India</p>
             </div>
 
             <div style="overflow: hidden; padding: 2rem 0;">
                 <div class="testimonial-ticker">
                     <!-- Testimonials Duplicated -->
-                     <!-- 1 -->
+                    <!-- 1 -->
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"Saved 2000 bucks on my iPhone 15 search. Saasta is a life saver! Best comparison tool ever."</p>
+                        <p class="review-text">"Saved 2000 bucks on my iPhone 15 search. Saasta is a life saver! Best
+                            comparison tool ever."</p>
                         <div class="user-meta">
                             <div class="user-avatar">RS</div>
                             <div class="user-info">
@@ -169,7 +208,8 @@
                     <!-- 2 -->
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"I love how I can see both Amazon and Flipkart prices on one screen. Super fast interface!"</p>
+                        <p class="review-text">"I love how I can see both Amazon and Flipkart prices on one screen.
+                            Super fast interface!"</p>
                         <div class="user-meta">
                             <div class="user-avatar">PM</div>
                             <div class="user-info">
@@ -181,7 +221,8 @@
                     <!-- 3 -->
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★☆</div>
-                        <p class="review-text">"The interface is super fast and clean. No annoying ads. Comparing electronics is easy."</p>
+                        <p class="review-text">"The interface is super fast and clean. No annoying ads. Comparing
+                            electronics is easy."</p>
                         <div class="user-meta">
                             <div class="user-avatar">AK</div>
                             <div class="user-info">
@@ -193,7 +234,8 @@
                     <!-- 4 -->
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"Comparing electronics is so much easier now. Highly recommended tool for all shoppers!"</p>
+                        <p class="review-text">"Comparing electronics is so much easier now. Highly recommended tool for
+                            all shoppers!"</p>
                         <div class="user-meta">
                             <div class="user-avatar">SV</div>
                             <div class="user-info">
@@ -202,11 +244,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Duplicate -->
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"Saved 2000 bucks on my iPhone 15 search. Saasta is a life saver! Best comparison tool ever."</p>
+                        <p class="review-text">"Saved 2000 bucks on my iPhone 15 search. Saasta is a life saver! Best
+                            comparison tool ever."</p>
                         <div class="user-meta">
                             <div class="user-avatar">RS</div>
                             <div class="user-info">
@@ -217,7 +260,8 @@
                     </div>
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"I love how I can see both Amazon and Flipkart prices on one screen. Super fast interface!"</p>
+                        <p class="review-text">"I love how I can see both Amazon and Flipkart prices on one screen.
+                            Super fast interface!"</p>
                         <div class="user-meta">
                             <div class="user-avatar">PM</div>
                             <div class="user-info">
@@ -228,7 +272,8 @@
                     </div>
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★☆</div>
-                        <p class="review-text">"The interface is super fast and clean. No annoying ads. Comparing electronics is easy."</p>
+                        <p class="review-text">"The interface is super fast and clean. No annoying ads. Comparing
+                            electronics is easy."</p>
                         <div class="user-meta">
                             <div class="user-avatar">AK</div>
                             <div class="user-info">
@@ -239,7 +284,8 @@
                     </div>
                     <div class="testimonial-card-item">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">"Comparing electronics is so much easier now. Highly recommended tool for all shoppers!"</p>
+                        <p class="review-text">"Comparing electronics is so much easier now. Highly recommended tool for
+                            all shoppers!"</p>
                         <div class="user-meta">
                             <div class="user-avatar">SV</div>
                             <div class="user-info">
@@ -249,6 +295,47 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hot <span class="gradient-text">Deals</span> of the Day</h2>
+                    <p class="section-subtitle">Real-time price comparison from top Indian retailers</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="products-filter-container">
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="mobiles">Mobiles</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="audio">Audio</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By:</label>
+                        <select id="sort-filter" class="filter-select">
+                            <option value="recommended">Best Match</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="products-grid" class="products-grid">
+                    <!-- Products will be injected by JavaScript -->
+                </div>
+
+                <div class="view-more-container">
+                    <button class="view-more-btn">Explore More Deals <i data-lucide="arrow-right"></i></button>
                 </div>
             </div>
         </section>
@@ -263,21 +350,24 @@
                             <h3 class="faq-question">How does Saasta find prices?</h3>
                             <span class="faq-icon">+</span>
                         </div>
-                        <p class="faq-answer">We use official affiliate APIs and search indexing to fetch real-time prices from various retailers.</p>
+                        <p class="faq-answer">We use official affiliate APIs and search indexing to fetch real-time
+                            prices from various retailers.</p>
                     </div>
                     <div class="faq-item">
                         <div class="faq-header">
                             <h3 class="faq-question">Is Saasta free to use?</h3>
                             <span class="faq-icon">+</span>
                         </div>
-                        <p class="faq-answer">Yes, Saasta is 100% free for users. We might earn a small commission if you buy through our links.</p>
+                        <p class="faq-answer">Yes, Saasta is 100% free for users. We might earn a small commission if
+                            you buy through our links.</p>
                     </div>
                     <div class="faq-item">
                         <div class="faq-header">
                             <h3 class="faq-question">Does it show delivery charges?</h3>
                             <span class="faq-icon">+</span>
                         </div>
-                        <p class="faq-answer">We show the product price. Delivery charges may vary based on your location on the seller's site.</p>
+                        <p class="faq-answer">We show the product price. Delivery charges may vary based on your
+                            location on the seller's site.</p>
                     </div>
                 </div>
             </div>
@@ -350,4 +440,5 @@
     </footer>
 
 </body>
+
 </html>
